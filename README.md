@@ -9,6 +9,7 @@ This project delivers a data-driven Retail Intelligence & Procurement Roadmap de
 
 ## **Dataset Overview** :
 
+Dataset is taken from UCI Machine Learning Repository - https://archive.ics.uci.edu/dataset/289/dresses+attribute+sales
 The analysis is based on two primary datasets containing information on retail dress inventory and performance:
 
 **Attribute Dataset**: Contains categorical and descriptive features for 500 unique dress designs.
