@@ -25,11 +25,10 @@ These datasets are linked via a common unique identifier, Dress_ID. To perform t
 
 To ensure high-quality insights, the raw data underwent a rigorous cleaning process:
 
-* Handling Missing values: Handled missing values in critical columns like Material, FabricType, and Price using mode imputation and logical mapping.
-* Feature Engineering: Created a Total_Sales metric by aggregating time-series sales data across all recorded dates.
-Mapped "Autumn" and "Winter" categories to identify seasonal demand shifts.
-* Data Standardization: Corrected inconsistent labeling (e.g., standardizing "low" vs "Low" in Price categories) and found and removed duplicate entries
-* Merging: Integrated the Attribute Dataset and Sales Dataset into a single final dataset using common attribute in both dataset.
+* Handling Missing values: Handled missing values in critical columns like Material, FabricType, and Price using 'Unknown' because there are more null values and null values in rest column are handled using mode imputation .
+* Data Standardization: Corrected inconsistent labeling (e.g., standardizing "low" vs. "Low" in Price categories). Checked all the mispelled words and corrected it. Performed de-duplication to remove redundant entries and ensure data uniqueness.
+* Feature Engineering: Created a Total_Sales metric by aggregating time-series sales data across all recorded dates. So, we can understand how much sales happened for each dress
+* Data Integration(Merging): Merged the Attribute Dataset and Sales Dataset into a unified master dataframe using common product attributes.
 
 ## **EDA & Visualizations** :
 
